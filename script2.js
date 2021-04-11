@@ -4,7 +4,7 @@ document.body.style.backgroundImage = "URL(background.jpg)";
 
 function f(){
   var college = prompt("Welcome to Hogwarts!Which college do you want to join?\nGryffindor,Hufflepuff,Ravenclaw or Slytherin?");
- alert("That's perfect choice for you!Before you officially join " + college + "\n, please finish the puzzles below as a warm-up!");
+ alert("That's a perfect choice for you!Before you officially join " + college + "\n, please finish the puzzles below as a warm-up!");
 };
 
 function myFunction() {
@@ -14,7 +14,7 @@ function myFunction() {
     x = document.getElementById("demo").value;
     try {
         if(x == "")  throw ("Your answer is null.");
-        if(isNaN(x)) throw ("The type of your answer is a number.");
+        if(isNaN(x)) throw ("The type of your answer is not a number.");
         x = Number(x);
         if(x == 4800)    throw("Correct!");
         if(x > 4800)   throw("Incorrect!");
@@ -92,7 +92,7 @@ function f1(){
 
        function f4(){
          var response4 = prompt("Q4:Which letter is a part of your body?(uppercase form)")
-         if(response3 === "I"){
+         if(response4 === "I"){
            alert("Congratulations!You are right!");}
          else{
            alert("Sorry,your answer is incorrect.Please try again.");
