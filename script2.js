@@ -102,7 +102,7 @@ function f1(){
          function f5(){
            var response5 = prompt("Q5:What changes a pear into a pearl?(a letter,uppercase form)")
            if(response5 === "L"){
-             alert("Congratulations!You got 20 point!" + "\n" + "You've finished all the puzzles!\nStart your happy and magical life at school now!");}
+             alert("Congratulations!" + "\n" + "You've finished all the puzzles!\nStart your happy and magical life at school now!");}
            else{
              alert("Sorry,your answer is incorrect.Please try again.");
            }
