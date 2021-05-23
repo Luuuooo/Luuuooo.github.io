@@ -1,0 +1,66 @@
+#activity{
+  text-align: center;
+}
+
+.fun{
+  width: 100%;
+}
+
+.card-body{
+  background-color: silver;
+}
+
+.lead{
+  font-style: oblique;
+}
+
+.card-text{
+  font-weight: bold;
+}
+
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0;
+}
+
+.intro{
+  font-style: italic;
+  text-decoration: underline;
+}
+
+#fixed {
+  background-image: url('歌词.jpg');
+  height: 600px;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
+ background-size: cover;
+}
+
+.fa-facebook-square{
+  color: #004B97;
+}
+
+.fa-instagram{
+  color: #4B0091;
+}
+
+.fa-weixin{
+  color: green;
+}
+
+.fa-weibo{
+  color:#CE0000;
+}
+
+
+.fa-facebook:hover, .fa-weibo:hover, .fa-weixin:hover,.fa-instagram:hover:hover{
+  color: #d5d5d5;
+}
+
+.social a{
+  font-size: 4.5rem;
+  padding: 3rem;
+}
