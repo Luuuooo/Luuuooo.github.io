@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang = "zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>年粤日</title>
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<link rel="stylesheet" href="mystyle.css">
+
+
+</head>
+<body>
+<!--导航-->
+<nav class = "navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <div class = "container-fluid">
+    <a class= "navbar-brand" href="#">
+    <img src = "logo.png" width="70" height="70"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+     <span class="navbar-toggler-icon"></span>
+	 </button>
+	 <div class="collapse navbar-collapse" id="navbarResponsive">
+		 <ul class="navbar-nav justify-content-center ml-auto content-center">
+       <!--年年-->
+       <li class="nav-item dropdown active ">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          年年
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">年粤日历2021</a>
+          <a class="dropdown-item" href="#">年度十大</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">本土制造广东歌</a>
+        </div>
+      </li>
+       <!--粤粤-->
+      <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         粤粤
+       </a>
+       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="#">本月新歌</a>
+         <a class="dropdown-item" href="#">广东歌心愿单</a>
+         <a class="dropdown-item" href="#">年粤日论坛</a>
+       </div>
+     </li>
+        <!--日日-->
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          日日
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">去年今日</a>
+          <a class="dropdown-item" href="#">图词罐</a>
+        </div>
+      </li>
+      <!--关于我们-->
+      <li class="nav-item dropdown">
+       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         关于我们
+       </a>
+       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+         <a class="dropdown-item" href="#">关于年粤日</a>
+        <div class="dropdown-divider"></div>
+         <a class="dropdown-item" href="#">音乐或文化类合作</a>
+         <a class="dropdown-item" href="#">商务广告</a>
+       </div>
+     </li>
+     <!--我要投稿-->
+      <li class="nav-item">
+       <a class="nav-link" href="#">我要投稿</a>
+     </li>
+		 </ul>
+ </div>
+</div>
+<form class="d-flex">
+     <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+     <button class="btn btn-outline-light" type="submit">Search</button>
+   </form>
+</nav>
+
+<!--轮播图-->
+<div id="carouselExampleCaptions" class="carousel slide" data-touch="false" data-interval="false">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+        <img src="eason.png" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <video poster="eason.jpg" width="500px" height="500px" object-fit: fill controls>
+         <source src="致明日的舞.mp4" type="video/mp4" loop="loop">
+         <source src="致明日的舞.mp4" type="video/ogg" loop="loop">
+        </video>
+            <h5>致明日的舞</h5>
+      </div>
+
+    </div>
+      <div class="carousel-item">
+        <img src="joey.png" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <video poster="joey2.jpg " width="500px" height="500px" object-fit: fill controls>
+           <source src="东京人寿.mp4" type="video/mp4" loop="loop">
+             <source src="东京人寿.mp4" type="video/ogg" loop="loop">
+          </video>
+          <h5>东京人寿</h5>
+        </div>
+      </div>
+
+    <div class="carousel-item">
+      <img src="karen.png" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <video poster="karen.jpg" width="500px" height="500px" object-fit: fill controls>
+          <source scr="呼吸有害.mp4" type="video/mp4" loop="loop">
+          <source scr="呼吸有害.mp4" type="video/mp4" loop="loop">
+        </video>
+        <h5>呼吸有害</h5>
+      </div>
+    </div>
+
+  </div>
+
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions"  data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions"  data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+
+  </div>
+
+<!--巨幕 介绍-->
+<div class="jumbotron jumbotron-fluid bg-dark text-light">
+  <div class="container">
+    <h1 class="display-4">年粤日</h1>
+    <p class="lead">每晚一首粵語歌，陪你度過年月日。</p>
+  </div>
+</div>
+
+<!--三列卡片-->
+<div class="row" >
+
+ <div class="col-sm-4">
+  <div class="card text-dark text-center border-secondary mb-3" style="width:30rem">
+   <div class="card-body">
+    <img src="aga-dearjane.jpg"width="80%" height="80%">
+    <br></br>
+    <p class="card-text">【Live】AGA、Dear Jane — 银河修理员</p>
+    <a onclick="jump1()"class="btn btn-dark" >观看视频</a>
+<script>
+ function jump1(){
+   window.open("https://www.bilibili.com/video/BV1wA411B7xu?from=search&seid=1709528985589002021");
+ }
+</script>
+ </div>
+  </div>
+ </div>
+
+<div class="col-sm-4">
+ <div class="card  bg-light text-dark text-center border-secondary mb-3" style="width: 30rem ">
+  <div class="card-body">
+  <img src="angela.jpg"  width="90%" height="90%">
+  <br></br>
+   <p class="card-text">【Live】许靖韵 — 情歌之后</p>
+   <a onclick="jump2()"class="btn btn-dark" >观看视频</a>
+   <script>
+   function jump2(){
+   window.open("https://www.bilibili.com/video/BV1Y64y1m7Q9?from=search&seid=17916533365648050200");
+   }
+   </script>
+  </div>
+ </div>
+</div>
+
+<div class="col-sm-4">
+<div class="card  bg-light text-dark text-center border-secondary mb-3"  style="width: 30rem">
+ <div class="card-body">
+   <img src="hins-qiao.jpg" width="93%" height="93%">
+   <br></br>
+  <p class="card-text">【Live】张敬轩 — 俏郎君</p>
+  <a onclick="jump3()"class="btn btn-dark" >观看视频
+  </a>
+  <script>
+  function jump3(){
+  window.open("https://www.bilibili.com/video/BV1NK4y1S71p?from=search&seid=4808306519127706070");
+  }
+  </script>
+</div>
+</div>
+</div>
+</div>
+
+<!--活动介绍-->
+<hr class="my-4 ">
+
+<div class="container-fluid " id="activity">
+	<div class="row">
+		<div class="col-lg-6 " >
+      <br>
+			<h2>最新活动</h2>
+      <br>
+      <br>
+      <h4>自由生长——我们都是听广东歌长大的</h4>
+      <p>   年粤日户外音乐会</p>
+      <p class="intro">      📅时间：5月1日（周六）20:00 - 21:30</p>
+      <p class="intro">      📍地点：广州市海珠区新港东路10号保利广场</p>
+      <p class="intro">      🙋参与方式：可直接前来</p>
+      <p class="intro">      ⚠️温馨提示：为配合疫情防控工作，请大家佩戴好口罩</p>
+
+      <br>
+      <a onclick="jump4()"class="btn btn-secondary" >了解更多</a>
+<hr class="my-4">
+      <script>
+      function jump4(){
+      window.open("https://mp.weixin.qq.com/s/Y8s53pPctQxGhmMSFcVjpQ");
+      }
+      </script>
+		</div>
+		<div class="col-lg-6">
+      <br>
+			<img src="活动一.png" class="img-fluid">
+		</div>
+	</div>
+</div>
+
+<!--- Emoji Section -->
+<button class="fun" data-toggle="collapse" data-target="#emoji">昨日港乐</button>
+<div id="emoji" class="collapse">
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-sm-6 col-md-3">
+				<img src="歌词1.jpg"class="jpg">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="歌词2.jpg" class="jpg">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="歌词3.jpg" class="jpg">
+			</div>
+			<div class="col-sm-6 col-md-3">
+				<img src="歌词4.jpg" class="jpg">
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--歌词背景-->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+		</div>
+	</div>
+</figure>
+
+
+
+<!--intro-->
+<div class="jumbotron jumbotron-fluid bg-dark text-light">
+  <div class="container">
+    <h1 class="display-4">#年粤日#究竟系咩嚟㗎？</h1>
+    <br>
+    <p class="lead2">年粤日，粤语流行音乐自媒体，成立于2015年7月。以「每晚一首粤语歌」为主要内容，用文字+图片
+的形式分享粤语歌背后的相关故事。致力于推广和传播粤语流行音乐，目前已在微信公众平台、微博、
+网易云音乐、虾米音乐、QQ音乐、即刻、Instagram、Facebook等多个网络平台开设账号，全网累计
+超过30万粉丝。其中公众号是主战场，赶紧看看你们还有哪个平台没follow啊喂</p>
+  </div>
+</div>
+<!--- 联系我们 -->
+<div class="container-fluid">
+	<div class="row text-center">
+		<div class="col-12">
+      <br>
+			<h2>联系我们</h2>
+      <br>
+      <hr align=center width=300 color="black" size=1>
+      <br>
+		</div>
+		<div class="col-12 social">
+			<a href="#"><i class="fab fa-weixin"></i></a>
+			<a href="#"><i class="fab fa-weibo"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+	</div>
+</div>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid bg-dark text-white">
+    <hr class="my-4">
+		<div class="row text-center">
+			<div class="col-md-6">
+				<img src="logo.png"  width="70" height="70">
+				<hr align=center width=300 color="white" size=1>
+				<p>个人微信号：daybydaygz</p>
+				<p>2475612770@qq.com</p>
+				<p>网易云音乐：年粤日</p>
+				<p>荔枝FM：1995306</p>
+			</div>
+			<div class="col-md-6 text-center">
+        <img src="weixin.jpg" width="250" height="250">
+        <br>
+        <br>
+			</div>
+			<div class="col-12">
+		<hr style="filter: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color="white" SIZE=1>
+				<h6>&copy; 年粤日&nbsp;&nbsp;每晚一首粵語歌，陪你度過年月日。</h6>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
+</body>
+</html>
