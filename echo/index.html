@@ -1,0 +1,1081 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Echo留学资讯</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
+
+  <!-- =======================================================
+  * Template Name: Groovin - v2.2.1
+  * Template URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html">echo留学资讯</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="index.html">首页</a></li>
+          <li><a href="#about">院校信息</a></li>
+          <li><a href="#portfolio">留学资讯</a></li>
+          <li><a href="#team">师资团队</a></li>
+          <li><a href="#contact">联系我们</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+      <a href="#about" class="get-started-btn scrollto">开始浏览</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background: url(assets/img/slide/slide1.jpg);">
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2 class="animate__animated animate__fadeInDown" >Echo，回声。</h2>
+                <p class="animate__animated animate__fadeInUp"> 让你的追求与付出都得到回应。</p>
+                <div>
+                  <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">了解更多</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background: url(assets/img/slide/slide3.jpg);">
+            <div class="carousel-background"><img src="assets/img/slide/slide3.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content2">
+                <h2 class="animate__animated animate__fadeInDown">Set forth，启程。</h2>
+                <p class="animate__animated animate__fadeInUp">踏上陌生的国度去看这世界。</p>
+                <div>
+                  <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">了解更多</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background: url(assets/img/slide/slide2.JPG);">
+            <div class="carousel-background"><img src="assets/img/slide/slide2.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content3">
+                <h2 class="animate__animated animate__fadeInDown">Forge ahead，前行。</h2>
+                <p class="animate__animated animate__fadeInUp">成为更好的自己。</p>
+                <div>
+                  <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">了解更多</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon icofont-simple-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon icofont-simple-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= 院校排名 ======= -->
+  <section id="about" class="about">
+    <div class="row" >
+      <div class="col-lg-6">
+       <canvas id="myChart"></canvas>
+       <script>
+       var ctx = document.getElementById('myChart').getContext('2d');
+       var chart = new Chart(myChart,{
+         type:'bar',
+         data:{
+         labels:['1.皇家艺术学院','2.伦敦艺术大学','3.罗德岛艺术设计学院','4.麻省理工学院','5.米兰理工大学'],
+         datasets:[{
+           label:'QS得分',
+           data:[
+             99.6, 95, 90.6, 85, 84.1
+           ],
+           //backgroundColor:'green'
+           backgroundColor:[
+           'rgba(	0,100,0)',
+           'rgba(	0,128,0)',
+           'rgba(	34,139,34)',
+           'rgba(	46,139,87)',
+           'rgba(60,179,113)'
+           ],
+           borderWidth:1,
+           borderColor:'#777',
+           hoverBorderColor:'#000',
+           hoverBorderWidth:3,
+             barThickness:25
+         }]
+     },
+         options:{
+          indexAxis:'y',
+           plugins:{
+             title:{
+               display:true,
+               text:'2021年QS世界大学艺术与设计学科排名',
+               font:{
+                 size:20
+               }
+             },
+             legend:{
+               display:true,
+               position:'right',
+               labels:{
+                 font:{
+                   size:15,
+                 },
+                boxHeight:15
+               }
+             }
+         },
+         animation:{
+           duration:3000,
+           easing:'easeInOutQuart'
+         },
+         scales:{
+           yAxes:[{
+             ticks:{
+               beginAtZero:true
+             }
+           }]
+         },
+         tooltip:{
+           enabled:true
+         }
+       }
+       });
+
+       </script>
+ </div>
+
+ <div class="col-lg-6">
+  <canvas id="myChart2"></canvas>
+  <script>
+  var ctx = document.getElementById('myChart2').getContext('2d');
+  var chart = new Chart(myChart2,{
+    type:'bar',
+    data:{
+    labels:['6.阿尔托大学','7.芝加哥艺术学院学院（SAIC）','8.格拉斯哥艺术学院（GSA）','9.普瑞特艺术学院','10.艺术中心设计学院'],
+    datasets:[{
+      label:'QS得分',
+      data:[
+        82.9, 82.8, 82.3, 82.3, 80.6
+      ],
+      //backgroundColor:'green'
+      backgroundColor:[
+      'rgba(	47,79,79)',
+      'rgba(0,128,128)',
+      'rgba(	0,139,139)',
+      'rgba(32,178,170)',
+      'rgba(	102,205,170)'
+      ],
+      borderWidth:1,
+      borderColor:'#777',
+      hoverBorderColor:'#000',
+      hoverBorderWidth:3,
+      barThickness:25
+    }]
+},
+    options:{
+     indexAxis:'y',
+      plugins:{
+        title:{
+          display:true,
+          text:'2021年QS世界大学艺术与设计学科排名',
+          font:{
+            size:20
+          }
+        },
+        legend:{
+          display:true,
+          position:'right',
+          labels:{
+            font:{
+              size:15
+            }
+          }
+        }
+    },
+    animation:{
+      duration:3000,
+      easing:'easeInOutQuart'
+    },
+    scales:{
+      yAxes:[{
+        ticks:{
+          beginAtZero:true
+        }
+      }]
+    },
+    tooltip:{
+      enabled:true
+    }
+  }
+  });
+
+  </script>
+</div>
+   </div>
+   <br>
+   <p class="click1"><a href = "JavaScript:void(0)" onclick = "openDialog()">点击了解更多</a></p>
+   <div id="light" class="white_content">
+
+     <div class="media">
+    <div class="media-left media-top">
+    <a href="学校详情页.html">
+      <img class="media-object" src="assets/img/school/school-1.jpg" width="50%" height="50%" ></a>
+  </div>
+  <div class="media-body">
+    <a href="学校详情页.html">
+    <h4 class="media-heading"><strong>皇家艺术学院(Royal College of Art)</strong></h4>
+  </a>
+    <h6>公立艺术院校</h6>
+    <h6>专业推荐： 工业设计 | 交互设计 | 摄影</h6>
+    <img class="oic" src="assets/img/school/icn.png">  伦敦，英国</img>
+  </div>
+  <div class="g">
+        <div class="itas">
+         QS学科排名
+        </div>
+         <div class="sdae">
+          1
+        </div>
+        <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                        </div>
+</div>
+<br>
+<div class="media">
+<div class="media-left media-top">
+<a href="学校详情页.html">
+ <img class="media-object" src="assets/img/school/school-2.png" width="50%" height="50%" ></a>
+</div>
+<div class="media-body">
+  <a href="学校详情页.html">
+<h4 class="media-heading"><strong>伦敦艺术大学(University of the Arts London)</strong></h4>
+</a>
+<h6>公立艺术院校</h6>
+<h6>专业推荐： 服装设计 | 建筑设计 | 室内设计 | 平面设计 | 纯艺术 | 插画 | 摄影</h6>
+<img class="oic" src="assets/img/school/icn.png">  伦敦，英国</img>
+</div>
+<div class="g">
+   <div class="itas">
+    QS学科排名
+   </div>
+    <div class="sdae">
+     2
+   </div>
+   <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                   </div>
+</div>
+<br>
+<div class="media">
+<div class="media-left media-top">
+<a href="学校详情页.html">
+ <img class="media-object" src="assets/img/school/school-3.png" width="50%" height="50%" ></a>
+</div>
+<div class="media-body">
+  <a href="学校详情页.html">
+<h4 class="media-heading"><strong>罗德岛设计学院(Rhode Island School of Design)</strong></h4>
+</a>
+<h6>私立艺术院校</h6>
+<h6>专业推荐：  服装设计 | 数字媒体 | 平面设计 | 纯艺术</h6>
+<img class="oic" src="assets/img/school/icn.png">  罗德岛州，美国</img>
+</div>
+<div class="g">
+   <div class="itas">
+    QS学科排名
+   </div>
+    <div class="sdae">
+     3
+   </div>
+   <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                   </div>
+</div>
+<br>
+<div class="media">
+<div class="media-left media-top">
+<a href="学校详情页.html">
+ <img class="media-object" src="assets/img/school/school-4.png" width="50%" height="50%" ></a>
+</div>
+<div class="media-body">
+  <a href="学校详情页.html">
+<h4 class="media-heading"><strong>麻省理工学院(Massachusetts Institute of Technology)
+</strong></h4>
+</a>
+<h6>私立艺术院校</h6>
+<h6>专业推荐：  建筑设计</h6>
+<img class="oic" src="assets/img/school/icn.png">  马萨诸塞州，美国</img>
+</div>
+<div class="g">
+   <div class="itas">
+    QS学科排名
+   </div>
+    <div class="sdae">
+     4
+   </div>
+   <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                   </div>
+</div>
+
+<br>
+<div class="media">
+<div class="media-left media-top">
+<a href="#">
+ <img class="media-object" src="assets/img/school/school-5.jpg" width="50%" height="50%" ></a>
+</div>
+<div class="media-body">
+    <a href="学校详情页.html">
+<h4 class="media-heading"><strong>米兰理工大学米兰理工大学(Politecnico di MILANO)
+</strong></h4>
+</a>
+<h6>公立艺术院校</h6>
+<h6>专业推荐：  服装设计 | 室内设计 | 工业设计</h6>
+<img class="oic" src="assets/img/school/icn.png">  伦巴第大区米兰市，意大利</img>
+</div>
+<div class="g">
+   <div class="itas">
+    QS学科排名
+   </div>
+    <div class="sdae">
+     5
+   </div>
+   <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                   </div>
+</div>
+
+<br>
+<div class="media">
+<div class="media-left media-top">
+<a href="#">
+ <img class="media-object" src="assets/img/school/school-6.png" width="20%" height="20%" ></a>
+</div>
+<div class="media-body">
+    <a href="学校详情页.html">
+<h4 class="media-heading"><strong>阿尔托大学(Aalto University)</strong></h4>
+</a>
+<h6>公立艺术院校</h6>
+<h6>专业推荐：  建筑设计 | 纯艺术 | 景观设计 | 艺术管理</h6>
+<img class="oic" src="assets/img/school/icn.png">  埃斯波和赫尔辛基，芬兰</img>
+</div>
+<div class="g">
+   <div class="itas">
+    QS学科排名
+   </div>
+    <div class="sdae">
+     6
+   </div>
+   <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                   </div>
+</div>
+
+<br>
+<div class="media">
+<div class="media-left media-top">
+<a href="#">
+ <img class="media-object" src="assets/img/school/school-7.png" width="20%" height="20%" ></a>
+</div>
+<div class="media-body">
+    <a href="学校详情页.html">
+<h4 class="media-heading"><strong>芝加哥艺术学院(School of the Art Institute of Chicago)
+</strong></h4>
+</a>
+<h6>公立艺术院校</h6>
+<h6>专业推荐：  室内设计 | 纯艺术 | 摄影</h6>
+<img class="oic" src="assets/img/school/icn.png">  芝加哥，美国</img>
+</div>
+<div class="g">
+   <div class="itas">
+    QS学科排名
+   </div>
+    <div class="sdae">
+     7
+   </div>
+   <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                   </div>
+</div>
+
+<br>
+<div class="media">
+<div class="media-left media-top">
+<a href="#">
+ <img class="media-object" src="assets/img/school/school-8.png" width="20%" height="20%" ></a>
+</div>
+<div class="media-body">
+    <a href="学校详情页.html">
+<h4 class="media-heading"><strong>格拉斯哥艺术学院(The Glasgow School of Art)
+</strong></h4>
+</a>
+<h6>公立艺术院校</h6>
+<h6>专业推荐：  服装设计 | 室内设计 | 工业设计 | 动画</h6>
+<img class="oic" src="assets/img/school/icn.png">  格拉斯哥，英国</img>
+</div>
+<div class="g">
+   <div class="itas">
+    QS学科排名
+   </div>
+    <div class="sdae">
+     8
+   </div>
+   <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                   </div>
+</div>
+
+<br>
+<div class="media">
+<div class="media-left media-top">
+<a href="学校详情页.html">
+ <img class="media-object" src="assets/img/school/school-9.png" width="20%" height="20%" ></a>
+</div>
+<div class="media-body">
+    <a href="学校详情页.html">
+<h4 class="media-heading"><strong>普瑞特艺术学院(Pratt Institute)
+</strong></h4>
+</a>
+<h6>私立艺术院校</h6>
+<h6>专业推荐：  建筑设计 | 室内设计 | 动画 | 交互设计</h6>
+<img class="oic" src="assets/img/school/icn.png">  纽约州，美国</img>
+</div>
+<div class="g">
+   <div class="itas">
+    QS学科排名
+   </div>
+    <div class="sdae">
+     9
+   </div>
+   <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                   </div>
+</div>
+
+<br>
+<div class="media">
+<div class="media-left media-top">
+<a href="学校详情页.html">
+ <img class="media-object" src="assets/img/school/school-10.png" width="20%" height="20%" ></a>
+</div>
+<div class="media-body">
+    <a href="学校详情页.html">
+<h4 class="media-heading"><strong>艺术中心设计学院(Art Center College of Design)
+</strong></h4>
+</a>
+<h6>私立艺术院校</h6>
+<h6>专业推荐：  工业设计 | 平面设计 | 插画</h6>
+<img class="oic" src="assets/img/school/icn.png">  加利福利亚州，美国</img>
+</div>
+<div class="g">
+   <div class="itas">
+    QS学科排名
+   </div>
+    <div class="sdae">
+     10
+   </div>
+   <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                   </div>
+</div>
+<div class="vbox-close" onclick = "closeDialog()" style="color: rgb(210, 210, 210); background-color: transparent;">×</div>
+   </div>
+   <div id="fade" class="black_overlay"></div>
+<br>
+
+      <!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-live-support"></i>
+              <span data-toggle="counter-up">656.06</span>
+              <p><strong>累计留学人数</strong></p>
+              <p>从1978年至2019年，我国各类出国留学人员累计已达到656.06万人。<p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-users-alt-5"></i>
+              <span data-toggle="counter-up">60</span>
+              <p><strong>留学规模</strong></p>
+              <p>每年有超过60万中国留学生出国留学。<p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-simple-smile"></i>
+              <span data-toggle="counter-up">100</span>
+              <p><strong>海外留学分布</strong></p>
+              <p>中国赴海外留学生分布在100多个国家和地区中。<p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="icofont-document-folder"></i>
+              <span data-toggle="counter-up">10</span>
+              <p><strong>艺术留学现状</strong></p>
+              <p>每年艺术留学人数以10%的速度增长。<p>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients section-bg">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/school/school_11.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/school/school-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/school/school_13.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/school/school_12.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/school/school_14.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+            <img src="assets/img/school/school_15.jpg" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  <!-- End Clients Section -->
+
+    <!-- ======= Portfolio Section 留学资讯 ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>留学资讯</h2>
+          <hr style="height:5px;width:60px;border:none;border-top:2px solid #5c9f24;">
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">全部</li>
+              <li data-filter=".filter-app">留学攻略</li>
+              <li data-filter=".filter-card">留学体验</li>
+              <li data-filter=".filter-web">院校信息</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap ">
+              <img src="assets/img/5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>在线学习</h4>
+                <p>防疫政策下的艺术留学生活</p>
+                <div class="portfolio-links">
+                  <a href="留学资讯页.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/14.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>罗德岛2022独立命题，透露作品集两大新信号！</h4>
+                <p>获取最新信息</p>
+                <div class="portfolio-links">
+                  <a href="留学资讯页.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>哪里可以免费留学？</h4>
+                <p>留学，不止英美</p>
+                <div class="portfolio-links">
+                  <a href="留学资讯页.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>在巴黎艺术留学的体验</h4>
+                <p>困难与快乐并存</p>
+                <div class="portfolio-links">
+                  <a href="留学资讯页.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/12.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>爱大2022硕士申请变更</h4>
+                <p>爱大秋申注意啦！</p>
+                <div class="portfolio-links">
+                  <a href="留学资讯页.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/15.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>亲民!“霓虹国”给你准备了100多种奖学金</h4>
+                <p>日本留学奖学金</p>
+                <div class="portfolio-links">
+                  <a href="留学资讯页.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/10.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>北欧留学30天初体验</h4>
+                <p>给绝望的人希望，给希望的人幸福</p>
+                <div class="portfolio-links">
+                  <a href="留学资讯页.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/11.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>在UCL就读是一种怎样的体验？</h4>
+                <p>最真实的UCL留学体验</p>
+                <div class="portfolio-links">
+                  <a href="留学资讯页.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/13.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>加州艺术学院(CCA)优势专业都有哪些</h4>
+                <p>美国顶尖艺术学院</p>
+                <div class="portfolio-links">
+                  <a href="留学资讯页.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Team Section 师资团队 ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>师资团队</h2>
+          <hr style="height:5px;width:60px;border:none;border-top:2px solid #5c9f24;">
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="member">
+              <img src="assets/img/portfolio/Dominika.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Dominika导师</h4>
+                  <span>服装设计，中央圣马丁艺术与设计学院</span>
+                  <div class="social">
+                    <a href="师资团队页.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="assets/img/portfolio/Brad.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Brad导师</h4>
+                  <span>交互设计，帕森斯设计学院</span>
+                  <div class="social">
+                      <a href="师资团队页.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="assets/img/portfolio/Boris.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Boris Yu导师</h4>
+                  <span>建筑设计/城市规划，南加州大学</span>
+                  <div class="social">
+                      <a href="师资团队页.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="assets/img/portfolio/Wei Xing.png" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Wei Xing导师</h4>
+                  <span>动画设计/游戏设计，英国诺森比亚大学</span>
+                  <div class="social">
+                      <a href="师资团队页.html" title="More Details"><i class="bx bx-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+
+    <!-- ======= Frequently Asked Questions Section 常见问题======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>常见问题</h2>
+          <hr style="height:5px;width:50px;border:none;border-top:2px solid #5c9f24;">
+      </div>
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">去哪个国家留学好? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
+                <p>
+                  不同的国家，文化价值、风土人情、气候、教育制度、教学方式、国际生留学政策、费用、签证等诸多方面，都有着不小的差别。，同学们可以根据自身的需求以及经济状况进行选择。
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">如果申请转学留学的话，适合去哪些国家呢?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-parent=".faq-list">
+                <p>
+                  这个需要结合自己的情况和国外大学的要求及申请程序综合地分析，除了考虑出国留学费用以外，外语能力和留学考试等留学的基本要求也是需要考虑到的。如果英语基础薄弱，要转学去英语国家比如美国，就比较困难了，这时候可以考虑法国等欧洲国家，但是需要学习法语或者其他外语。
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">国外Full-time的硕士要读几年？<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-parent=".faq-list">
+                <p>
+                 各个国家不一样，美国硕士一般为期1-2年，英国一般为1年，澳洲通常为1.5-3年，加拿大一般为1.5-2年。
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">托福、雅思、GMAT、GRE考试成绩有效期多久？<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-parent=".faq-list">
+                <p>
+                 托福和雅思的有效期为2年，GMAT和GRE的有效期为5年，超过有效期的考试成绩不能用来申请。
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">国外大学看重申请者的哪些因素？<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-parent=".faq-list">
+                <p>
+                  最主要的是申请人的过往学习经历，包括学校、专业、绩点等；其次是托福/雅思成绩、GMAT/GRE成绩；最后是申请文书，包括个人陈述和推荐信等。
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>联系我们</h2>
+          <hr style="height:5px;width:60px;border:none;border-top:2px solid #5c9f24;">
+          <p>感谢您的浏览！以下是我们的联系方式，如果您有留学意向，欢迎您向我们咨询了解。同时，我们也欢迎您向我们的网页提出意见反馈。</p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="icofont-google-map"></i>
+              <h3>地址</h3>
+              <address>中国传媒大学，北京</address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="icofont-phone"></i>
+              <h3>电话号码</h3>
+              <p><a href="tel:+155895548855">+17772371497</a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="icofont-envelope"></i>
+              <h3>邮箱</h3>
+              <p><a href="mailto:info@example.com">304469147@qq.com</a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="form">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <div class="form-row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="姓名" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                <div class="validate"></div>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="电子邮箱" data-rule="email" data-msg="Please enter a valid email">
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="主题" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validate"></div>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="输入内容"></textarea>
+              <div class="validate"></div>
+            </div>
+            <div class="mb-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">您的信息已成功发送，感谢！</div>
+            </div>
+            <div class="text-center"><button type="submit">发送信息</button></div>
+          </form>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-info">
+              <h3>Echo留学资讯</h3>
+              <p>
+                中国传媒大学 <br>
+                朝阳区，北京<br><br>
+                <strong>电话号码:</strong> +17772371497<br>
+                <strong>邮箱:</strong> 304469147@qq.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>相关链接</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">首页</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">院校信息</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#portfolio">留学资讯</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#team">师资团队</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">联系我们</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>我们提供的服务</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="liuxuejigou.html">留学规划</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="liuxuejigou.html">作品集制作</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="liuxuejigou.html">留学规划</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="liuxuejigou.html">院校申请</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="liuxuejigou.html">签证申请</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>留学最新资讯</h4>
+            <p>您可在下方留下您的电子邮箱，我们将定期向您发送留学最新资讯。</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="订阅">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Groovin</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/groovin-free-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+<script type="text/javascript">
+$(function(){
+})
+function openDialog(){
+    document.getElementById('light').style.display='block';
+    document.getElementById('fade').style.display='block'
+}
+function closeDialog(){
+    document.getElementById('light').style.display='none';
+    document.getElementById('fade').style.display='none'
+}
+</script>
+
+
+</html>
