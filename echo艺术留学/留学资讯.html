@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<!--
+	Moon by GetTemplates.co
+	URL: https://gettemplates.co
+-->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Echo艺术留学</title>
+    <meta name="description" content="Core HTML Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+
+  <link rel="stylesheet" href="vendor/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
+
+  <link rel="stylesheet" href="css/20190711poster.css">
+  <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+	<div class="boxed-page">
+		<nav id="gtco-header-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <b>  echo艺术留学</b>
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav-header">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">首页</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="定制服务.html">定制服务</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="留学资讯.html"><strong>留学资讯</strong></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="对话KOL.html">对话KOL</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="讨论交流区.html">讨论交流区</a>
+              </li>
+
+                <li>
+                  <img src="icons/search.svg">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>		<div class="jumbotron d-flex align-items-center" style="background-image: url(img/slide-3.jpg)">
+
+    <!-- partial:index.partial.html -->
+
+    <div class="container_search col-sm-12">
+      <form autocomplete="off">
+        <div class="finder">
+          <div class="finder__outer">
+            <div class="finder__inner">
+              <div class="finder__icon" ref="icon"></div>
+              <input class="finder__input" type="text" name="q" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!-- partial -->
+
+
+
+
+
+</div>
+
+<section id="gtco-who-we-are" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+
+            <div class="row" >
+              <div class="col-lg-12">
+               <canvas id="myChart"></canvas>
+               <script>
+               var ctx = document.getElementById('myChart').getContext('2d');
+               var chart = new Chart(myChart,{
+                 type:'bar',
+                 data:{
+                 labels:['1.皇家艺术学院','2.伦敦艺术大学','3.罗德岛艺术设计学院','4.麻省理工学院','5.米兰理工大学','6.阿尔托大学','7.芝加哥艺术学院学院（SAIC）','8.格拉斯哥艺术学院（GSA）','9.普瑞特艺术学院','10.艺术中心设计学院'],
+                 datasets:[{
+                   label:'QS得分',
+                   data:[
+                     99.6, 95, 90.6, 85, 84.1,82.9, 82.8, 82.3, 82.3, 80.6
+                   ],
+                   //backgroundColor:'green'
+                   backgroundColor:[
+                  'rgba(210,105,30)',
+                  'rgba(210,105,30)',
+                   'rgba(	255,140,0)',
+                   'rgba(	255,140,0)',
+                   'rgba(255,127,80)',
+                   'rgba(255,127,80)',
+                   'rgba(	255,165,0)',
+                   'rgba(	255,165,0)',
+                   'rgba(244,164,96)',
+                   'rgba(244,164,96)',
+
+                   ],
+                   borderWidth:1,
+                   borderColor:'#777',
+                   hoverBorderColor:'#000',
+                   hoverBorderWidth:3,
+                     barThickness:25
+                 }]
+             },
+                 options:{
+                  indexAxis:'y',
+                   plugins:{
+                     title:{
+                       display:true,
+                       text:'2021年QS世界大学艺术与设计学科排名',
+                       font:{
+                         size:20
+                       }
+                     },
+                     legend:{
+                       display:true,
+                       position:'right',
+                       labels:{
+                         font:{
+                           size:15,
+                         },
+                        boxHeight:15
+                       }
+                     }
+                 },
+                 animation:{
+                   duration:3000,
+                   easing:'easeInOutQuart'
+                 },
+                 scales:{
+                   yAxes:[{
+                     ticks:{
+                       beginAtZero:true
+                     }
+                   }]
+                 },
+                 tooltip:{
+                   enabled:true
+                 }
+               }
+               });
+
+               </script>
+         </div>
+        </div>
+            <!-- /.row -->
+        </div>
+    </div>
+</section>		<!-- Counter Section -->
+
+
+
+
+<!-- End of Counter Section -->		<!-- Features Section-->
+<section id="gtco-features" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <!-- Section Title -->
+            <div>
+              <div class="media">
+             <div class="media-left media-top">
+             <a href="学校详情页.html">
+               <img class="media-object" src="img/school/school-1.jpg" width="50%" height="50%" ></a>
+           </div>
+           <div class="media-body">
+             <a href="学校详情页.html">
+             <h4 class="media-heading"><strong>皇家艺术学院(Royal College of Art)</strong></h4>
+           </a>
+             <h6>公立艺术院校</h6>
+             <h6>专业推荐： 工业设计 | 交互设计 | 摄影</h6>
+             <img class="oic" src="img/school/icn.png">  伦敦，英国</img>
+           </div>
+           <div class="g">
+                 <div class="itas">
+                  QS学科排名
+                 </div>
+                  <div class="sdae">
+                   1
+                 </div>
+                 <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                                 </div>
+         </div>
+         <br>
+         <div class="media">
+         <div class="media-left media-top">
+         <a href="学校详情页.html">
+          <img class="media-object" src="img/school/school-2.png" width="50%" height="50%" ></a>
+         </div>
+         <div class="media-body">
+           <a href="学校详情页.html">
+         <h4 class="media-heading"><strong>伦敦艺术大学(University of the Arts London)</strong></h4>
+         </a>
+         <h6>公立艺术院校</h6>
+         <h6>专业推荐： 服装设计 | 建筑设计 | 室内设计 | 平面设计 | 纯艺术 | 插画 | 摄影</h6>
+         <img class="oic" src="img/school/icn.png">  伦敦，英国</img>
+         </div>
+         <div class="g">
+            <div class="itas">
+             QS学科排名
+            </div>
+             <div class="sdae">
+              2
+            </div>
+            <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                            </div>
+         </div>
+         <br>
+         <div class="media">
+         <div class="media-left media-top">
+         <a href="学校详情页.html">
+          <img class="media-object" src="img/school/school-3.png" width="50%" height="50%" ></a>
+         </div>
+         <div class="media-body">
+           <a href="学校详情页.html">
+         <h4 class="media-heading"><strong>罗德岛设计学院(Rhode Island School of Design)</strong></h4>
+         </a>
+         <h6>私立艺术院校</h6>
+         <h6>专业推荐：  服装设计 | 数字媒体 | 平面设计 | 纯艺术</h6>
+         <img class="oic" src="img/school/icn.png">  罗德岛州，美国</img>
+         </div>
+         <div class="g">
+            <div class="itas">
+             QS学科排名
+            </div>
+             <div class="sdae">
+              3
+            </div>
+            <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                            </div>
+         </div>
+         <br>
+         <div class="media">
+         <div class="media-left media-top">
+         <a href="学校详情页.html">
+          <img class="media-object" src="img/school/school-4.png" width="50%" height="50%" ></a>
+         </div>
+         <div class="media-body">
+           <a href="学校详情页.html">
+         <h4 class="media-heading"><strong>麻省理工学院(Massachusetts Institute of Technology)
+         </strong></h4>
+         </a>
+         <h6>私立艺术院校</h6>
+         <h6>专业推荐：  建筑设计</h6>
+         <img class="oic" src="img/school/icn.png">  马萨诸塞州，美国</img>
+         </div>
+         <div class="g">
+            <div class="itas">
+             QS学科排名
+            </div>
+             <div class="sdae">
+              4
+            </div>
+            <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                            </div>
+         </div>
+
+         <br>
+         <div class="media">
+         <div class="media-left media-top">
+         <a href="#">
+          <img class="media-object" src="img/school/school-5.jpg" width="50%" height="50%" ></a>
+         </div>
+         <div class="media-body">
+             <a href="学校详情页.html">
+         <h4 class="media-heading"><strong>米兰理工大学米兰理工大学(Politecnico di MILANO)
+         </strong></h4>
+         </a>
+         <h6>公立艺术院校</h6>
+         <h6>专业推荐：  服装设计 | 室内设计 | 工业设计</h6>
+         <img class="oic" src="img/school/icn.png">  伦巴第大区米兰市，意大利</img>
+         </div>
+         <div class="g">
+            <div class="itas">
+             QS学科排名
+            </div>
+             <div class="sdae">
+              5
+            </div>
+            <a href="学校详情页.html" class="moda" target="_blank">查看</a>
+                            </div>
+         </div>
+
+
+        </div>
+        <br>
+        <div >
+        <a class="next "href="#gtco-features">
+        &nbsp;<img src="icons/chevron-double-right.svg" class="next" align="right" width="25px" height="25px">
+      </a>
+      </div>
+
+    </div>
+          <br>
+</section>
+<br>
+<!-- End of Features Section-->		<section id="gtco-section-featurettes" class="featurettes bg-white">
+
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <!-- Section Title -->
+                    <div class="title-wrap">
+                        <h2 class="section-title">
+                            <b>对话艺术家</b><br>
+                        </h2>
+
+                        <p class="section-sub-title">
+                             了解你欣赏的艺术家都在哪所高校任职吧！
+                        </p>
+                    </div>
+                    <!-- End of Section Title -->
+
+                    <div class="featurettes-wrap text-left mb-4">
+
+                        <div class="row featurettes-item">
+
+                            <div class="col-md-4 offset-md-2 col-sm-6">
+
+                                <h4 class="mb-4">Ashley Hall</h4>
+                                <p><small>设计创新教授<br>设计硕士/博士学位<br>诺丁汉特伦特大学 家具设计学士<br>皇家艺术学院 硕士<br>悉尼科技大学 博士</small></p>
+                                <p><small>&nbsp;&nbsp;&nbsp;&nbsp;就职于皇家艺术学院，他目前在工业物联网，人工智能，工程技术，设计工程，创新，控制论和设计教育等十几个基于实践的博士生中进行指导，这些技术应用于从物联网到人工智能的技术重点领域。他还是北京中央美术学院（CAFA）
+                                </small></p>
+                            </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+
+                            <div class="col-md-4 offset-md-right-2 col-sm-6">
+                                <img class="my-5" src="img/期末作业图片/Ashley_Hall.jpg" alt="">
+                            </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+
+                        </div><!--/ .featurettes-item -->
+
+                    </div><!--/ .featurettes-wrap -->
+
+<br>
+                    <div class="featurettes-wrap text-left">
+
+                        <div class="row featurettes-item">
+
+                            <div class="col-md-4 offset-md-2 col-sm-6">
+                                <img class="my-4" src="img/期末作业图片/Tracey_Waller.jpg" alt="">
+                            </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+
+                            <div class="col-md-4 offset-md-right-2 col-sm-6 mb-5">
+
+                                <h4 class="mb-4">Tracey Waller</h4>
+                                <p><small>皇家艺术学院 平面设计硕士学位<br>中央圣马丁 平面设计学士学位<br>切尔西和温布尔登艺术学院平面设计项目总监<br>RCA视觉传达计划负责人</p>
+                              </small></p>
+                              <p>
+                                <small>&nbsp;&nbsp;&nbsp;&nbsp;就职于皇家艺术学院，大型电视台和制作公司担任动态图形设计师已有14年以上的经验，为BAFTA获奖电视剧，电影片名，广播图形和广告版式制作了标题序列。客户包括英国广播公司（BBC），第5频道
+                                  ，尼克电视台（Nickelodeon），MTV等。</small>
+                              </p>
+                            </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+
+                        </div><!--/ .featurettes-item -->
+
+                    </div><!--/ .featurettes-wrap -->
+<br>
+<br>
+                    <div class="featurettes-wrap text-left mb-4">
+
+                        <div class="row featurettes-item">
+
+                            <div class="col-md-4 offset-md-2 col-sm-6">
+
+                                <h4 class="mb-4">Alexandria Smith</h4>
+                                <p><small>锡拉丘兹大学 插图画家<br>纽约大学艺术教 育硕士学位<br>帕森斯新设计学院 绘画学硕士学位<br>爱荷华大学版画专业的客座助理教授<br>《黑人生活》团体黑人女性艺术家的联合组织者
+                                <br>马萨诸塞州韦尔斯利市韦尔斯利学院工作室艺术助理教授<br>马萨诸塞州艺术与设计学院（MassArt）和SMFA 客座评论家</small></p>
+                                <p><small>&nbsp;&nbsp;&nbsp;&nbsp;就职于皇家艺术学院，曾获得波洛克·克拉斯纳基金会的资助，目前正在 纽约皇后博物馆展出首个个人博物馆展览《雕像纪念碑》。</small></p>
+                            </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+
+                            <div class="col-md-4 offset-md-right-2 col-sm-6">
+                                <img class="my-5" src="img/期末作业图片/Alexandria_Smith.jpg" alt="">
+                            </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+
+                        </div><!--/ .featurettes-item -->
+
+                    </div><!--/ .featurettes-wrap -->
+
+                </div><!--/ .col-md-12 -->
+
+            </div><!--/ .row -->
+            <a class="next "href="#gtco-section-featurettes">
+            &nbsp;<img src="icons/chevron-double-right.svg" class="next" align="right" width="25px" height="25px">
+          </a>
+        </div>
+    </div><!--/ .container -->
+
+</section>		<!-- Blog Section -->
+<section id="gtco-blog" class="bg-grey">
+    <div class="container">
+        <div class="section-content">
+            <div class="title-wrap mb-5">
+                <h2 class="section-title"><b>留学资讯文章</b></h2>
+                <hr style="height:5px;width:70px;border:none;border-top:2px solid #FF5809;">
+                <p class="section-sub-title">为你提供最全面最即时的热门资讯。</p>
+            </div>
+            <div class="row">
+                <!-- Blog -->
+                <div class="col-md-12 blog-holder">
+                    <div class="row">
+                        <!-- Blog Item -->
+                        <div class="col-md-4 blog-item-wrapper">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <a href="留学资讯文章详情.html"><img src="img/information/10.jpg" alt=""></a>
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-tag">
+                                        <a href="留学资讯文章详情.html"><h6><small>留学体验</small></h6></a>
+                                    </div>
+                                    <div class="blog-title">
+                                        <a href="留学资讯文章详情.html"><h4>北欧留学30天初体验：给绝望的人希望，给希望的人幸福</h4></a>
+                                    </div>
+                                    <div class="blog-meta">
+                                        <p class="blog-date">2021-07-09</p>
+
+                                    </div>
+                                    <div class="blog-desc">
+                                        <p>在北欧的生活让我感慨生活的仪式感，虽说每天大部分时间都忙于课程，但每一天都非常充实。 就像Fika的咖啡，虽然略带苦涩，但却醇香四溢。</p>
+                                    </div>
+                                    <div class="blog-author">
+                                        <p>by Weiran</p>
+                                    </div>
+                                    <div class="blog-share-wrapper">
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Blog Item -->
+                        <!-- Blog Item -->
+                        <div class="col-md-4 blog-item-wrapper">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <a href="留学资讯文章详情.html"><img src="img/information/15.jpg" alt=""></a>
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-tag">
+                                        <a href="留学资讯文章详情.html"><h6><small>留学攻略</small></h6></a>
+                                    </div>
+                                    <div class="blog-title">
+                                        <a href="留学资讯文章详情.html"><h4>亲民!“霓虹国”给你准备了100多种奖学金</h4></a>
+                                    </div>
+                                    <div class="blog-meta">
+                                        <p class="blog-date">2021-7-10</p>
+
+                                    <div class="blog-desc">
+                                        <p>留学日本能够申请什么奖学金？我们为你整理了以下信息。</p>
+                                    </div>
+                                    <div class="blog-author">
+                                        <p>by Echo艺术留学</p>
+                                    </div>
+                                    <div class="blog-share-wrapper">
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                        <!-- End of Blog Item -->
+                        <!-- Blog Item -->
+                        <div class="col-md-4 blog-item-wrapper">
+                            <div class="blog-item">
+                                <div class="blog-img">
+                                    <a href="留学资讯文章详情.html"><img src="img/information/14.jpg" alt=""></a>
+                                </div>
+                                <div class="blog-text">
+                                    <div class="blog-tag">
+                                        <a href="留学资讯文章详情.html"><h6><small>院校信息</small></h6></a>
+                                    </div>
+                                    <div class="blog-title">
+                                        <a href="留学资讯文章详情.html"><h4>罗德岛2022独立命题，透露作品集两大新信号！</h4></a>
+                                    </div>
+                                    <div class="blog-meta">
+                                        <p class="blog-date">2021-7-11</p>
+
+                                    </div>
+                                    <div class="blog-desc">
+                                        <p>罗德岛独立命题释放出什么信号？我们为你解读。</p>
+                                    </div>
+                                    <div class="blog-author">
+                                        <p>by Echo艺术留学</p>
+                                    </div>
+                                    <div class="blog-share-wrapper">
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-facebook-square"></i>
+                                        </a>
+                                        <a class="blog-share" href="google.com">
+                                            <i class="fab fa-twitter-square"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Blog Item -->
+                    </div>
+
+                    <div class="row">
+                        <!-- Blog -->
+                        <div class="col-md-12 blog-holder">
+                            <div class="row">
+                                <!-- Blog Item -->
+                                <div class="col-md-4 blog-item-wrapper">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                            <a href="留学资讯文章详情.html"><img src="img/information/5.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-text">
+                                            <div class="blog-tag">
+                                                <a href="留学资讯文章详情.html"><h6><small>留学攻略</small></h6></a>
+                                            </div>
+                                            <div class="blog-title">
+                                                <a href="留学资讯文章详情.html"><h4>在线学习——疫情防控政策下的艺术留学生活</h4></a>
+                                            </div>
+                                            <div class="blog-meta">
+                                                <p class="blog-date">2021-07-01</p>
+
+                                            </div>
+                                            <div class="blog-desc">
+                                                <p>被疫情困在家的艺术留学生活是怎样的呢？当前各国防疫政策与留学政策如何呢、。</p>
+                                            </div>
+                                            <div class="blog-author">
+                                                <p>by Echo艺术留学</p>
+                                            </div>
+                                            <div class="blog-share-wrapper">
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-twitter-square"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Blog Item -->
+                                <!-- Blog Item -->
+                                <div class="col-md-4 blog-item-wrapper">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                            <a href="留学资讯文章详情.html"><img src="img/information/13.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-text">
+                                            <div class="blog-tag">
+                                                <a href="留学资讯文章详情.html"><h6><small>院校信息</small></h6></a>
+                                            </div>
+                                            <div class="blog-title">
+                                                <a href="留学资讯文章详情.html"><h4>加州艺术学院(CCA)优势专业都有哪些？</h4></a>
+                                            </div>
+                                            <div class="blog-meta">
+                                                <p class="blog-date">2021-7-12</p>
+
+                                            <div class="blog-desc">
+                                                <p>了解美国顶尖艺术院校CCA的优势专业，或许这就是你心仪的院校。</p>
+                                            </div>
+                                            <div class="blog-author">
+                                                <p>by Echo艺术留学</p>
+                                            </div>
+                                            <div class="blog-share-wrapper">
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-twitter-square"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              </div>
+                                <!-- End of Blog Item -->
+                                <!-- Blog Item -->
+                                <div class="col-md-4 blog-item-wrapper">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                            <a href="留学资讯文章详情.html"><img src="img/information/7.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-text">
+                                            <div class="blog-tag">
+                                                <a href="留学资讯文章详情.html"><h6><small>留学体验</small></h6></a>
+                                            </div>
+                                            <div class="blog-title">
+                                                <a href="留学资讯文章详情.html"><h4>在巴黎艺术留学的体验</h4></a>
+                                            </div>
+                                            <div class="blog-meta">
+                                                <p class="blog-date">2021-7-15</p>
+
+                                            </div>
+                                            <div class="blog-desc">
+                                                <p>在浪漫之都巴黎留学，或许与你想象中的不一样。</p>
+                                            </div>
+                                            <div class="blog-author">
+                                                <p>by Echo艺术留学</p>
+                                            </div>
+                                            <div class="blog-share-wrapper">
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-twitter-square"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Blog Item -->
+                            </div>
+
+
+
+
+                </div>
+                <!-- End of Blog -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Blog Section -->		<!-- Portfolio Section -->
+
+
+<!-- End of Blog Section -->
+<br>
+
+<!-- End of Client Section -->		<footer class="mastfoot mb-3 py-4 border-top">
+    <div class="container bg-container">
+      <br>
+         <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="footer-info">
+              <h3>Echo留学资讯</h3>
+              <p>
+                中国传媒大学 <br>
+                朝阳区，北京<br><br>
+                <strong>电话号码:</strong> +17772371497<br>
+                <strong>邮箱:</strong> 304469147@qq.com<br>
+              </p>
+              <br>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 col-md-6 footer-newsletter">
+            <h4>留学最新资讯</h4>
+<br>
+            <p>您可在下方留下您的电子邮箱，我们将定期向您发送留学最新资讯。</p>
+
+            <form action="" method="post">
+              <br><br><br>
+              <input type="email" name="email"><input type="submit" value="订阅">
+            </form>
+
+          </div>
+
+        </div>
+        <hr>
+        <div class="col-md-6 d-flex align-items-center justify-content-md-start justify-content-center" align="center">
+          <p class="mb-0">&copy; 2019 Moon. All Right Reserved. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a>.</p>
+        </div>
+
+        </div>
+
+</footer>
+
+  <a href="#" class="back-to-top"><div style="text-align:right"><img src="icons/arrow-up-circle.svg" width="50px"></div></a>
+
+	<!-- External JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/isotope/isotope.min.js"></script>
+	<script src="vendor/lightcase/lightcase.js"></script>
+	<script src="vendor/waypoints/waypoint.min.js"></script>
+	<script src="vendor/countTo/jquery.countTo.js"></script>
+
+	<!-- Main JS -->
+    <script src="js/back-to-top.js"></script>
+    <script  src="js/script.js"></script>
+	<script src="js/app.min.js "></script>
+	<script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>

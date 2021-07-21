@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<!--
+	Moon by GetTemplates.co
+	URL: https://gettemplates.co
+-->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Echo艺术留学</title>
+    <meta name="description" content="Core HTML Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- External CSS -->
+        <link rel="stylesheet" href="vendor/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://file.myfontastic.com/7vRKgqrN3iFEnLHuqYhYuL/icons.css" rel="stylesheet">
+
+
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <style type="text/css">
+        .demo {
+            padding: 3em 0;
+        }
+
+        .main-timeline {
+            padding-top: 50px;
+            position:relative;
+        }
+
+            .main-timeline:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            .main-timeline .timeline {
+                width: 54.2%;
+                float: left;
+                margin-top: -50px;
+                overflow: hidden;
+                position: relative;
+            }
+
+                .main-timeline .timeline:last-child {
+                    overflow: visible;
+                }
+
+                .main-timeline .timeline:before {
+                    content: "";
+                    width: 95px;
+                    height: 95px;
+                    border-radius: 50%;
+                    background: #fff;
+                    border: 4px solid transparent;
+                    border-top: 4px solid #8c51c7;
+                    border-left: 4px solid #8c51c7;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    transform: rotate(45deg);
+                }
+
+                .main-timeline .timeline:after {
+                    content: "";
+                    width: 65px;
+                    height: 100%;
+                    border-radius: 80px 80px 0 0;
+                    background: #8c51c7;
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                }
+
+            .main-timeline .timeline-content {
+                display: block;
+                padding: 0 90px 50px 15px;
+                position: relative;
+            }
+
+                .main-timeline .timeline-content:hover {
+                    text-decoration: none;
+                }
+
+            .main-timeline .year {
+                display: inline-block;
+                font-size: 30px;
+                font-weight: 800;
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                right: 13px;
+                z-index: 1;
+                transform: rotate(90deg) translateX(-50%);
+            }
+
+            .main-timeline .timeline:last-child .year {
+                top: 60%;
+            }
+
+            .main-timeline .title {
+                padding: 10px 25px;
+                margin: 0;
+                font-size: 25px;
+                font-weight: 800;
+                color: #8c51c7;
+                background: linear-gradient(to bottom,transparent,transparent,transparent,transparent,transparent,#8c51c7);
+            }
+
+            .main-timeline .description {
+                padding: 10px 25px;
+                border: 4px solid #8c51c7;
+                border-radius: 0 0 80px 80px;
+                font-size: 17px;
+                color: #000;
+                letter-spacing: 1px;
+            }
+
+            .main-timeline .timeline:nth-child(2n) {
+                float: right;
+            }
+
+                .main-timeline .timeline:nth-child(2n):before {
+                    right: auto;
+                    left: 0;
+                }
+
+                .main-timeline .timeline:nth-child(2n):after {
+                    right: auto;
+                    left: 15px;
+                }
+
+                .main-timeline .timeline:nth-child(2n) .timeline-content {
+                    padding: 0 15px 50px 90px;
+                }
+
+            .main-timeline .timeline:last-child .timeline-content {
+                padding-bottom: 20px;
+            }
+
+            .main-timeline .timeline:nth-child(2n) .year {
+                right: auto;
+                left: 13px;
+            }
+
+            .main-timeline .timeline:nth-child(2n):before {
+                border-top-color: #faa400;
+                border-left-color: #faa400;
+            }
+
+            .main-timeline .timeline:nth-child(2n):after {
+                background: #faa400;
+            }
+
+            .main-timeline .timeline:nth-child(2n) .title {
+                color: #faa400;
+                background: linear-gradient(to bottom,transparent,transparent,transparent,transparent,transparent,#faa400);
+            }
+
+            .main-timeline .timeline:nth-child(2n) .description {
+                border-color: #faa400;
+            }
+
+            .main-timeline .timeline:nth-child(3n):before {
+                border-top-color: #e86c44;
+                border-left-color: #e86c44;
+            }
+
+            .main-timeline .timeline:nth-child(3n):after {
+                background: #e86c44;
+            }
+
+            .main-timeline .timeline:nth-child(3n) .title {
+                color: #e86c44;
+                background: linear-gradient(to bottom,transparent,transparent,transparent,transparent,transparent,#e86c44);
+            }
+
+            .main-timeline .timeline:nth-child(3n) .description {
+                border-color: #e86c44;
+            }
+
+            .main-timeline .timeline:nth-child(4n):before {
+                border-top-color: #45a137;
+                border-left-color: #45a137;
+            }
+
+            .main-timeline .timeline:nth-child(4n):after {
+                background: #45a137;
+            }
+
+            .main-timeline .timeline:nth-child(4n) .title {
+                color: #45a137;
+                background: linear-gradient(to bottom,transparent,transparent,transparent,transparent,transparent,#45a137);
+            }
+
+            .main-timeline .timeline:nth-child(4n) .description {
+                border-color: #45a137;
+            }
+
+        @media only screen and (max-width: 1200px) {
+            .main-timeline .timeline {
+                width: 55.1%;
+            }
+        }
+
+        @media only screen and (max-width: 990px) {
+            .main-timeline .timeline {
+                width: 56.5%;
+            }
+
+            .main-timeline .title {
+                font-size: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 767px) {
+            .main-timeline {
+                padding-top: 0;
+            }
+
+                .main-timeline .timeline {
+                    width: 100%;
+                    float: none;
+                    margin: 0 0 -30px 0;
+                }
+
+                    .main-timeline .timeline:before {
+                        right: auto;
+                        left: 0;
+                    }
+
+                    .main-timeline .timeline:after {
+                        right: auto;
+                        left: 15px;
+                    }
+
+                .main-timeline .timeline-content {
+                    padding: 0 15px 50px 90px;
+                }
+
+                .main-timeline .year {
+                    right: auto;
+                    left: 13px;
+                }
+        }
+
+        @media only screen and (max-width: 479px) {
+            .main-timeline .title {
+                padding: 5px 5px 5px 15px;
+                font-weight: 600;
+            }
+
+            .main-timeline .description {
+                padding: 5px 20px 20px;
+                font-size: 14px;
+                text-align: justify;
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/20190711poster.css">
+    <script src="https://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target="#navbar-nav-header" class="static-layout">
+	<div class="boxed-page">
+		<nav id="gtco-header-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <b>  echo艺术留学</b>
+      </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav-header">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="index.html">首页</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="定制服务.html"><strong>定制服务</strong></a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="留学资讯.html">留学资讯</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="对话KOL.html">对话KOL</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="讨论交流区.html">讨论交流区</a>
+              </li>
+                <li>
+                  <img src="icons/search.svg">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</nav>		<div class="jumbotron d-flex align-items-center" style="background-image: url(img/slide-2.jpg)">
+  <div class="container text-center">
+    <h1 class="display-2 mb-4">专业艺术留学服务定制</h1>
+    <p>
+    你的努力和梦想总会有回响。
+    </p>
+  </div>
+</div>
+
+<section id="gtco-features" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <!-- Section Title -->
+            <div class="title-wrap">
+                <h2 class="section-title">
+                    专业艺术留学服务
+                </h2>
+                <hr style="height:5px;width:70px;border:none;border-top:2px solid #FF5809;">
+                <p class="section-sub-title">我们将根据你的需求为你专业定制最佳留学申请方案，进行一对一导师指导。</p>
+            </div>
+            <!-- End of Section Title -->
+            <section id="resume-details" class="section-padding">
+
+
+              <div class="demo" align="center">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="main-timeline">
+                                  <div class="timeline">
+                                      <div  class="timeline-content">
+                                          <span class="year">四月</span>
+                                          <h3 class="title">01</h3>
+                                          <p class="description">
+                                            进行基础艺术课程的学习<br>做好初步的申请规划<br>准备托福/雅思语言考试
+                                          </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="timeline">
+                                        <div  class="timeline-content">
+                                          <span class="year">五月</span>
+                                          <h3 class="title">02</h3>
+                                          <p class="description">
+                                            进行基础艺术课程的学习<br>申请规划讲解<br>选校&选专业分析沟通<br>SAT考试<br>准备托福/雅思语言考试
+                                          </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="timeline">
+                                        <div  class="timeline-content">
+                                          <span class="year">六月</span>
+                                          <h3 class="title">03</h3>
+                                          <p class="description">
+                                            作品集项目一制作<br>文书checklist发送<br>申请规划跟进指导<br>准备托福/雅思语言考试
+                                          </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="timeline">
+                                      <div  class="timeline-content">
+                                          <span class="year">七月</span>
+                                          <h3 class="title">04</h3>
+                                          <p class="description">
+                                           作品集项目二制作<br>文书素材收集与反馈
+                                          </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="timeline">
+                                        <div  class="timeline-content">
+                                          <span class="year">八月</span>
+                                          <h3 class="title">05</h3>
+                                          <p class="description">
+作品集项目三制作<br>主文书/PS+CV初稿RL完成
+                                          </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="timeline">
+                                        <div  class="timeline-content">
+                                          <span class="year">九月</span>
+                                          <h3 class="title">06</h3>
+                                          <p class="description">
+                                            作品集项目四制作<br>作品集排版&审核<br>学习开具相关材料<br>托福/雅思提前批院校标化送分<br>本科提前批网申填写<br>联系推荐老师提交推荐信<br>独立文书写作
+                                          </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="timeline">
+                                        <div  class="timeline-content">
+                                          <span class="year">十月</span>
+                                          <h3 class="title">07</h3>
+                                          <p class="description">
+                                            面试材料查漏补缺<br>英国跟踪收录offer<br>面试预约&指导<br>伦艺面试<br>正常批网申+作品集提交<br>正常批标化送分
+                                          </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="timeline">
+                                        <div  class="timeline-content">
+                                          <span class="year">十一月</span>
+                                          <h3 class="title">08</h3>
+                                          <p class="description">
+                                            正常批网申填写<br>文书修改至定稿<br>英国跟踪收录offer<br>雅思/托福刷分<br>提前批申请追踪
+                                          </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="timeline">
+                                        <div  class="timeline-content">
+                                          <span class="year">十二月</span>
+                                          <h3 class="title">09</h3>
+                                          <p class="description">
+                                           面试指导<br>英国跟踪收录offer<br>伦艺面试<br>面试预约&指导<br>正常批网申+作品集提交<br>正常批标化送分
+                                          </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="timeline">
+                                        <div  class="timeline-content">
+                                          <span class="year">一月</span>
+                                          <h3 class="title">10</h3>
+                                          <p class="description">
+                                            正常批标化送分<br>申请材料查漏补缺<br>伦艺面试<br>面试预约&指导<br>美国提前批offer收录<br>英国offer收录与追踪
+                                          </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="timeline">
+                                        <div  class="timeline-content">
+                                          <span class="year">二月</span>
+                                          <h3 class="title">11</h3>
+                                          <p class="description">
+                                            美国本科offer收录<br>英国offer收录与追踪<br>申请材料查漏补缺
+                                          </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="timeline">
+                                        <div  class="timeline-content">
+                                          <span class="year">三月</span>
+                                          <h3 class="title">12</h3>
+                                          <p class="description">
+                                          缴纳学习定金<br>美国院校offer收录追踪<br>offer分析确定入读学校<br>准备存款证明<br>英国肺结核体检<br>英国申请语言课<br>英国缴纳语言课定金<br>
+                                          </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="timeline">
+                                        <div  class="timeline-content">
+                                          <span class="year">四月</span>
+                                          <h3 class="title">13</h3>
+                                          <p class="description">
+                                            美国院校offer收录追踪<br>申请主课宿舍<br>英国申请语言课/交语言课定金<br>换I20/CAS
+                                          </p>
+                                      </div>
+                                  </div>
+
+                                  <div class="timeline">
+                                      <div  class="timeline-content">
+                                          <span class="year">五月</span>
+                                          <h3 class="title">14</h3>
+                                          <p class="description">
+                                          签证材料准备<br>签证预约<br>签证指导对练<br>行前指导
+                                          </p>
+                                      </div>
+                                  </div>
+
+
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+</section>
+<br>
+<!-- End of Features Section-->
+
+	<!-- Blog Section -->
+<section id="gtco-blog" class="bg-grey">
+    <div class="container">
+        <div class="section-content">
+            <div class="title-wrap mb-5">
+                <h2 class="section-title"><b>师资团队</b></h2>
+                <hr style="height:5px;width:70px;border:none;border-top:2px solid #FF5809;">
+                <p class="section-sub-title">最强大的导师阵容</p>
+            </div>
+
+                        <div class="col-md-12 blog-holder">
+                            <div class="row">
+                                <!-- Blog Item -->
+                                <div class="col-md-4 blog-item-wrapper">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                          <img src="img/portfolio/Dominika.png" alt="">
+                                        </div>
+                                        <div class="blog-text">
+
+                                            <div class="blog-title">
+                                                <h4>Dominika导师</h4>
+                                            </div>
+                                            <div class="blog-meta">
+                                                <p class="blog-date">专业：服装设计<br/>学校：中央圣马丁<br/></p></p>
+
+                                            </div>
+                                            <div class="blog-desc">
+                                                <p>来自波兰的热情、爽朗、时尚的魅力艺术大咖， 拥有丰富的服装设计专业经历及教学经验，擅长设计女装、男装，具备深厚的面料和皮革知识，教授面料改造、建模、3D、手绘、立裁以及成衣，曾指导中国学生成功入读中央圣马丁、伦敦时装学院等。</div>
+
+                                            <div class="blog-share-wrapper">
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-twitter-square"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Blog Item -->
+                                <!-- Blog Item -->
+                                <div class="col-md-4 blog-item-wrapper">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                          <img src="img/portfolio/Aneta.png" alt="">
+                                        </div>
+                                        <div class="blog-text">
+
+                                            <div class="blog-title">
+                                                <h4>Aneta导师</h4>
+                                            </div>
+                                            <div class="blog-meta">
+                                                <p class="blog-date">专业：服装设计<br/>学校：帕森斯设计学院<br/></p></p>
+
+                                            </div>
+                                            <div class="blog-desc">
+                                                <p>帕森斯时装学院和艺术传媒科技学院的教授，同时担任了美国多所大学时尚学院的规划师和研究员。曾深入参与课程研发和课程编撰，为世界各地输送了大量优秀的人才。曾多次参与国际知名时装，重大活动和奢侈品品牌的设计制作，组织带领学生workshop的经验丰富。</div>
+
+                                            <div class="blog-share-wrapper">
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-twitter-square"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Blog Item -->
+                                <!-- Blog Item -->
+                                <div class="col-md-4 blog-item-wrapper">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                            <img src="img/portfolio/Brad.png" alt="">
+                                        </div>
+                                        <div class="blog-text">
+
+                                            <div class="blog-title">
+                                              <h4>Brad导师</h4>
+                                            </div>
+                                            <div class="blog-meta">
+                                                <p class="blog-date">专业：交互设计<br/>学校：帕森斯设计学院<br/></p></p>
+
+                                            </div>
+                                            <div class="blog-desc">
+                                                <p>Brad是Parsons设计与科技学院(BFA和MFA)的兼职教授，是一个非常有创造、多才多艺的设计师，曾做过专业的政治漫画家、漫画插画师、动画师、产品设计师、 开发者、游戏设计师、视频博 客作者和作者。</div>
+
+                                            <div class="blog-share-wrapper">
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-twitter-square"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Blog Item -->
+                            </div>
+                        </div>
+                        <!-- End of Blog -->
+
+                        <div class="col-md-12 blog-holder">
+                            <div class="row">
+                                <!-- Blog Item -->
+                                <div class="col-md-4 blog-item-wrapper">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                          <img src="img/portfolio/Boris.png" alt="">
+                                        </div>
+                                        <div class="blog-text">
+
+                                            <div class="blog-title">
+                                                <h4>Boris Yu导师</h4>
+                                            </div>
+                                            <div class="blog-meta">
+                                                <p class="blog-date">专业：建筑设计|城市规划<br/>学校：南加州大学<br/></p></p>
+
+                                            </div>
+                                            <div class="blog-desc">
+                                                <p>做美国南加州大学建筑设计和景观设计双硕士、曾就职于美国知名企业参与迪拜棕榈岛及五星级酒店、度假村规划设计，参与清华同衡规划院及重庆旅游规划项目，有着5年多的艺术留学作品集教学经验，所带学生申请到包括哈佛、宾大、哥大、罗德岛、UCL、伦艺等海外艺术名校。</p></div>
+
+                                            <div class="blog-share-wrapper">
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-twitter-square"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Blog Item -->
+                                <!-- Blog Item -->
+                                <div class="col-md-4 blog-item-wrapper">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                          <img src="img/portfolio/ShiWei.png" alt="">
+                                        </div>
+                                        <div class="blog-text">
+
+                                            <div class="blog-title">
+                                              <h4>ShiWei导师</h4>
+                                            </div>
+                                            <div class="blog-meta">
+                                                <p class="blog-date">专业：交互设计、视觉传达、摄影<br/>学校：新南威尔士大学<br/></p></p>
+
+                                            </div>
+                                            <div class="blog-desc">
+                                                <p>美行思远平面设计、视觉传达、交互设计、摄影导师。8年海外求学及工作经验，在交互设计、视觉设计、平面设计、图片媒体等领域有着丰富系统的工作与教学经验。所带学生申请到到皇家艺术学院、中央圣马丁、切尔西艺术学院、温布尔登艺术学院、金斯顿大学、伦敦传媒学院等众多世界级名校。被学生誉为“皇艺收割机”。</p>
+</div>
+                                            <div class="blog-share-wrapper">
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-twitter-square"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Blog Item -->
+                                <!-- Blog Item -->
+                                <div class="col-md-4 blog-item-wrapper">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                            <img src="img/portfolio/Wei Xing.png" alt="">
+                                        </div>
+                                        <div class="blog-text">
+
+                                            <div class="blog-title">
+                                                <h4>Wei Xing导师</h4>
+                                            </div>
+                                            <div class="blog-meta">
+                                                <p class="blog-date">专业：动画设计|游戏设计<br/>学校：英国诺森比亚大学<br/></p></p>
+
+                                            </div>
+                                            <div class="blog-desc">
+                                                <p>美行思远动画专业、游戏设计导师，英国诺森比亚大学综合设计动画专业方向硕士、优秀毕业生，擅长平面设计、插画、动画、游戏设计等。丰富的作品集辅导经验，所带学生100余位申请到世界顶级名校。</p></div>
+
+                                            <div class="blog-share-wrapper">
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-twitter-square"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Blog Item -->
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 blog-holder">
+                            <div class="row">
+                                <!-- Blog Item -->
+                                <div class="col-md-4 blog-item-wrapper">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                            <img src="img/portfolio/Rita.png" alt="">
+                                        </div>
+                                        <div class="blog-text">
+
+                                            <div class="blog-title">
+                                                <h4>Rita导师</h4>
+                                            </div>
+                                            <div class="blog-meta">
+                                                <p class="blog-date">专业：插画设计<br/>学校：爱丁堡大学<br/></p></p>
+
+                                            </div>
+                                            <div class="blog-desc">
+                                                <p>英国爱丁堡大学插画硕士、谢菲尔德平面设计学士，擅长平面设计、视觉传达、插画设计、交互设计。多年教学经验，一对一教授视觉方向的本科研究生学生10余人。</p></div>
+
+                                            <div class="blog-share-wrapper">
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-twitter-square"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Blog Item -->
+                                <!-- Blog Item -->
+                                <div class="col-md-4 blog-item-wrapper">
+                                    <div class="blog-item">
+                                        <div class="blog-img">
+                                            <img src="img/portfolio/Lee.png" alt="">
+                                        </div>
+                                        <div class="blog-text">
+
+                                            <div class="blog-title">
+                                                <h4>Lee导师</h4>
+                                            </div>
+                                            <div class="blog-meta">
+                                                <p class="blog-date">专业：服装设计<br/>学校：伦敦时装学院<br/></p></p>
+
+                                            </div>
+                                            <div class="blog-desc">
+                                                <p>伦敦时装学院服装设计硕士，她曾与著名品牌HM合作项目曾与伦敦时装周期间在牛津街展出；曾在设计师品牌XUZHI实习，参与18度假系列的产品开发。李老师对于服装设计非常有自己的想法，认为时装是关于每个人与自我，以及自我与他人的协调后的结果。</p>
+                      </div>
+                                            <div class="blog-share-wrapper">
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-facebook-square"></i>
+                                                </a>
+                                                <a class="blog-share" href="google.com">
+                                                    <i class="fab fa-twitter-square"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Blog Item -->
+                                <!-- Blog Item -->
+
+                                <!-- End of Blog Item -->
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+</section>
+<!-- End of Blog Section -->		<!-- Portfolio Section -->
+<section id="gtco-contact-form" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <!-- Section Title -->
+            <div class="title-wrap">
+              <h2 class="section-title"><b>定制服务</b></h2>
+              <hr style="height:5px;width:70px;border:none;border-top:2px solid #FF5809;">
+              <p class="section-sub-title">我们将根据您输入的信息条件为您制定最合适的留学方案。</p>
+            </div>
+            <div class="row" align="center">
+              <div class="col-md-3 mb-5" style="border:0px;">
+                  <div class="card h-100" style="border:0px;">
+                      <div>
+                          <h5>毕业院校:</h5>
+                          <select id="selectbox">
+                              <option value="pt_1">国内985</option>
+                              <option value="en_2">国内211 </option>
+                              <option value="es_3" >国内双非</option>
+                              <option value="ch_4">高中毕业</option>
+
+                          </select>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-5" style="border:0px;">
+                  <div class="card h-100" style="border:0px;">
+                      <div>
+                          <h5>学习成绩:</h5>
+                          <select id="selectbox">
+                              <option value="pt_1">90分以上</option>
+                              <option value="en_2">85-90分 </option>
+                              <option value="es_3" >80-85分</option>
+                              <option value="ch_4">70-80分</option>
+                              <option value="5">70分以下</option>
+                              <option value="5">高中毕业</option>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-5" style="border:0px;">
+                  <div class="card h-100" style="border:0px;">
+                      <div>
+                          <h5>目标留学地区:</h5>
+                          <select id="selectbox">
+                              <option value="pt_1">美国</option>
+                              <option value="en_2">英国</option>
+                              <option value="es_3">加拿大</option>
+                              <option value="ch_4">意大利</option>
+                              <option value="5">法国</option>
+                              <option value="5">日本</option>
+                              <option value="5">中国香港</option>
+                              <option value="5">其他地区</option>
+
+
+                          </select>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 mb-5" style="border:0px;">
+                  <div class="card h-100" style="border:0px;">
+                      <div>
+                          <h5>目标专业:</h5>
+                          <select id="selectbox">
+                              <option value="pt_1">服装设计</option>
+                              <option value="en_2">珠宝设计 </option>
+                              <option value="es_3">交互设计</option>
+                              <option value="ch_4">游戏设计</option>
+                              <option value="5">工业设计</option>
+                              <option value="pt_1">建筑艺术</option>
+                              <option value="pt_1">电影艺术</option>
+                              <option value="pt_1">其他</option>
+                          </select>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <!-- End of Section Title -->
+            <div class="row">
+                <!-- Contact Form Holder -->
+                <div class="col-md-8 offset-md-2 contact-form-holder mt-4">
+                    <form method="post" name="contact-us" action="">
+                        <div class="row">
+                            <div class="col-md-6 form-input">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="姓名">
+                            </div>
+                            <div class="col-md-6 form-input">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="电话">
+                            </div>
+                            <div class="col-md-12 form-input">
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="语言成绩(无则填写“无”)">
+                            </div>
+                            <div class="col-md-12 form-textarea">
+                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="补充信息"></textarea>
+                            </div>
+                            <div class="col-md-12 form-btn text-center">
+                                <button class="btn btn-block btn-secondary btn-red" type="submit" name="submit" onclick="return false;">发送信息</button>
+
+                            </div>
+                        </div>
+                    </form>
+                    <div id="form-message-warning"></div>
+                    <div id="form-message-success">
+                        Your message was sent, thank you!
+                    </div>
+                </div>
+                <!-- End of Contact Form Holder -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End of Blog Section -->
+<br>
+
+<!-- End of Client Section -->		<footer class="mastfoot mb-3 py-4 border-top">
+    <div class="inner container">
+      <br>
+         <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="footer-info">
+              <h3>Echo留学资讯</h3>
+              <p>
+                中国传媒大学 <br>
+                朝阳区，北京<br><br>
+                <strong>电话号码:</strong> +17772371497<br>
+                <strong>邮箱:</strong> 304469147@qq.com<br>
+              </p>
+              <br>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 col-md-6 footer-newsletter">
+            <h4>留学最新资讯</h4>
+            <br>
+            <p>您可在下方留下您的电子邮箱，我们将定期向您发送留学最新资讯。</p>
+            <br>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="订阅">
+            </form>
+
+          </div>
+
+        </div>
+        <hr>
+        <div class="col-md-6 d-flex align-items-center justify-content-md-start justify-content-center" align="center">
+          <p class="mb-0">&copy; 2019 Moon. All Right Reserved. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a>.</p>
+        </div>
+
+        </div>
+    </div>
+</footer>	</div>
+
+</div>
+
+<a href="#" class="back-to-top"><div style="text-align:right"><img src="icons/arrow-up-circle.svg" width="50px"></div></a>
+
+	<!-- External JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/isotope/isotope.min.js"></script>
+	<script src="vendor/lightcase/lightcase.js"></script>
+	<script src="vendor/waypoints/waypoint.min.js"></script>
+	<script src="vendor/countTo/jquery.countTo.js"></script>
+
+	<!-- Main JS -->
+    <script src="js/back-to-top.js"></script>
+	<script src="js/app.min.js "></script>
+	<script src="//localhost:35729/livereload.js"></script>
+
+</body>
+</html>
